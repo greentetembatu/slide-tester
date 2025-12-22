@@ -372,7 +372,8 @@ li {
   padding: 0.4rem 0.6rem;
   border: none;
   color: var(--accent-blue);
-  font-size: var(--p);
+  font-size: var(--p3);
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -420,7 +421,7 @@ li {
     box-shadow: none;
   }
 
-  .dropdown.is-open .dropdown-menu {
+  .dropdown.is-open > .dropdown-menu {
     display: block;
   }
 
@@ -466,7 +467,6 @@ li {
   border-radius: 8px;
   color: var(--dark-secondary);
 }
-
 
 
 
@@ -548,8 +548,8 @@ li {
 
 .hero-description {
     font-size: var(--h5);
-    line-height: 1.1;
-    color: var(--text-primary);
+    line-height: 1.2;
+    color: #cfd6ff;
 }
 
 /* ================= HERO CTA BUTTON ================= */
@@ -663,7 +663,7 @@ li {
 .name-text {
     font-size: var(--p);
     font-weight: 700;
-    color: var(--gold-primary);
+    color: #f1e6b5;
 }
 
 /*.title-text {
@@ -673,8 +673,7 @@ li {
 
 .title-text-small {
     font-size: var(--p3);
-    color: var(--text-primary);
-    font-weight: bold;
+    color: #bdbdbd;
 }
 
 /* ================= ANIMATIONS ================= */
