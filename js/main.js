@@ -1,199 +1,60 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Menu Toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
-    
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            menuToggle.querySelector('i').classList.toggle('fa-bars');
-            menuToggle.querySelector('i').classList.toggle('fa-times');
-            
-            // Tutup dropdown contact jika terbuka
-            const dropdownContact = document.getElementById('dropdownContact');
-            if (dropdownContact && dropdownContact.classList.contains('active')) {
-                dropdownContact.classList.remove('active');
-            }
-        });
-    }
-    
-    // Toggle dropdown contact (mobile)
-    const menuToggleContact = document.getElementById('menuToggleContact');
-    const dropdownContact = document.getElementById('dropdownContact');
-    
-    if (menuToggleContact && dropdownContact) {
-        menuToggleContact.addEventListener('click', function(e) {
-            e.stopPropagation();
-            dropdownContact.classList.toggle('active');
-            
-            // Tutup menu utama jika terbuka
-            if (navMenu && navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                if (menuToggle) {
-                    menuToggle.querySelector('i').classList.remove('fa-times');
-                    menuToggle.querySelector('i').classList.add('fa-bars');
-                }
-            }
-        });
-        
-        // Tutup dropdown contact saat klik di luar
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.menu-toggle-contact') && 
-                !e.target.closest('.dropdown-contact')) {
-                dropdownContact.classList.remove('active');
-            }
-        });
-    }
-    
-    
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href !== '#') {
-                e.preventDefault();
-                const targetElement = document.querySelector(href);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    
-                    // Close mobile menu if open
-                    if (navMenu && navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                        menuToggle.querySelector('i').classList.remove('fa-times');
-                        menuToggle.querySelector('i').classList.add('fa-bars');
-                    }
-                    
-                    // Close contact dropdown if open
-                    if (dropdownContact && dropdownContact.classList.contains('active')) {
-                        dropdownContact.classList.remove('active');
-                    }
-                }
-            }
-        });
-    });
-    
-    // Dropdown functionality for mobile
-    /*const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-    dropdownToggles.forEach(toggle => {
-        toggle.addEventListener('click', function(e) {
-            if (window.innerWidth <= 992) {
-                e.preventDefault();
-                e.stopPropagation();
-                const dropdown = this.closest('.dropdown');
-                const menu = dropdown.querySelector('.dropdown-menu');
-                
-                if (menu) {
-                    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-                }
-            }
-        });
-    });*/
+document.addEventListener("DOMContentLoaded", () => {
 
-    // Dropdown functionality for mobile
-const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-dropdownToggles.forEach(toggle => {
-    toggle.addEventListener('click', function(e) {
-        if (window.innerWidth <= 992) {
-            const dropdown = this.closest('.dropdown');
-            const menu = dropdown.querySelector('.dropdown-menu');
-            
-            if (menu) {
-                // Cek apakah dropdown-menu sedang ditampilkan
-                if (menu.style.display === 'block') {
-                    // Jika sedang ditampilkan, maka biarkan link diikuti (tidak prevent default)
-                    // Tapi kita ingin ketika dropdown terbuka dan klik link, dropdown tertutup dan link diikuti?
-                    // Atau mungkin biarkan default, tapi tutup dropdown?
-                    // Ini tergantung kebutuhan.
-                    // Misalnya: jika dropdown sudah terbuka, maka klik link akan menutup dropdown dan mengikuti link.
-                    // Tapi karena kita tidak mencegah default, maka link akan diikuti.
-                    // Namun, kita bisa menutup dropdown yang lain.
-                    menu.style.display = 'none';
-                } else {
-                    // Jika dropdown tidak terbuka, maka tampilkan dan cegah default
-                    e.preventDefault();
-                    e.stopPropagation();
-                    menu.style.display = 'block';
-                }
-            }
-            // Jika tidak ada menu, maka biarkan link berjalan normal (tidak dilakukan apa-apa)
-        }
+  const navMenu = document.querySelector(".nav-menu-container");
+  const menuToggle = document.getElementById("menuToggle");
+  const contactToggle = document.getElementById("menuToggleContact");
+  const contactDropdown = document.getElementById("dropdownContact");
+
+  /* ===== MOBILE MENU ===== */
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("is-open");
+      menuToggle.querySelector("i").classList.toggle("fa-bars");
+      menuToggle.querySelector("i").classList.toggle("fa-times");
+
+      contactDropdown?.classList.remove("is-open");
     });
-});
-    
-    // Close dropdowns when clicking outside
-document.addEventListener('click', function(e) {
-    // Variabel (harus sudah dideklarasikan sebelumnya)
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
-    const dropdownContact = document.getElementById('dropdownContact');
-    
-    // 1. Tutup dropdown contact
-    if (dropdownContact && dropdownContact.classList.contains('active')) {
-        if (!e.target.closest('.menu-toggle-contact') && 
-            !e.target.closest('.dropdown-contact')) {
-            dropdownContact.classList.remove('active');
-        }
-    }
-    
-    // 2. Tutup menu utama
-    if (navMenu && navMenu.classList.contains('active')) {
-        if (!e.target.closest('.menu-toggle') && 
-            !e.target.closest('.nav-menu-container')) {
-            navMenu.classList.remove('active');
-            if (menuToggle) {
-                menuToggle.querySelector('i').classList.remove('fa-times');
-                menuToggle.querySelector('i').classList.add('fa-bars');
-            }
-        }
-    }
-});
-    
-    // Update copyright year
-    const yearElement = document.getElementById('currentYear');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-    
-    // Add scroll effect to navbar
-    const navigationSection = document.querySelector('.navigation-section');
-    if (navigationSection) {
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) {
-                navigationSection.style.backgroundColor = 'rgba(10, 10, 10, 0.98)';
-                navigationSection.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
-            } else {
-                navigationSection.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
-                navigationSection.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
-            }
-        });
-    }
-    
-    // Close menus on window resize (reset for desktop)
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 992) {
-            // Reset mobile menu
-            if (navMenu) {
-                navMenu.classList.remove('active');
-            }
-            if (menuToggle) {
-                menuToggle.querySelector('i').classList.remove('fa-times');
-                menuToggle.querySelector('i').classList.add('fa-bars');
-            }
-            
-            // Reset contact dropdown
-            if (dropdownContact) {
-                dropdownContact.classList.remove('active');
-            }
-            
-            // Reset dropdown displays
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                menu.style.display = '';
-            });
-        }
+  }
+
+  /* ===== MOBILE CONTACT ===== */
+  if (contactToggle && contactDropdown) {
+    contactToggle.addEventListener("click", e => {
+      e.stopPropagation();
+      contactDropdown.classList.toggle("is-open");
+      navMenu?.classList.remove("is-open");
     });
+  }
+
+  /* ===== DROPDOWN MOBILE ===== */
+  document.querySelectorAll(".dropdown > .dropdown-toggle").forEach(toggle => {
+    toggle.addEventListener("click", e => {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        const parent = toggle.closest(".dropdown");
+        parent.classList.toggle("is-open");
+      }
+    });
+  });
+
+  /* ===== CLICK OUTSIDE ===== */
+  document.addEventListener("click", e => {
+    if (!e.target.closest(".navigation-section")) {
+      navMenu?.classList.remove("is-open");
+      contactDropdown?.classList.remove("is-open");
+    }
+  });
+
+  /* ===== RESET ON RESIZE ===== */
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 992) {
+      navMenu?.classList.remove("is-open");
+      contactDropdown?.classList.remove("is-open");
+      document
+        .querySelectorAll(".dropdown")
+        .forEach(d => d.classList.remove("is-open"));
+    }
+  });
+
 });
 
 
@@ -807,4 +668,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Fungsi untuk menampilkan/menyembunyikan tombol saat scroll
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add("show");
+        } else {
+            backToTopButton.classList.remove("show");
+        }
+    });
+
+    // Fungsi klik untuk kembali ke atas dengan halus
+    backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Efek gulir halus
+        });
+    });
+});
 
