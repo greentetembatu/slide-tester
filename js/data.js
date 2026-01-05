@@ -45,7 +45,7 @@ const sixBuildStBusinessPackagesData = {
         "Akta Pendirian Notaris",
         "SK Kemenkumham"
       ],
-      detailLink: "pendirian-koperasi.html",
+      detailLink: "pembuatan-koperasi.html",
       price: "Rp 3.000.000",
       contactLink: "https://wa.me/6281932122224"
     },
@@ -915,4 +915,5 @@ const viewFaqBusinessEntitySectionData = {
     }
   ]
 };
+
 
