@@ -110,7 +110,6 @@ body {
     display: none;
   }
 }
-
 /* ============NAV BAR================ */
 /* ============NAV BAR================ */
 /* ============NAV BAR================ */
@@ -407,6 +406,11 @@ body {
   opacity: 0;
 }
 
+
+
+.cover {
+  display: none;
+}
 /* ============HERO================ */
 /* ============HERO================ */
 /* ============HERO================ */
@@ -476,7 +480,7 @@ body {
   display: flex;
   gap: 15px;
   flex-direction: row;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .hero-btn-filled {
