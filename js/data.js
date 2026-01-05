@@ -915,5 +915,3 @@ const viewFaqBusinessEntitySectionData = {
     }
   ]
 };
-
-
