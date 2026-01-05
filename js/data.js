@@ -31,7 +31,7 @@ const sixBuildStBusinessPackagesData = {
         "Akta Pendirian Notaris",
         "SK Kemenkumham"
       ],
-      detailLink: "pendirian-cv.html",
+      detailLink: "pembuatan-cv.html",
       price: "Rp 3.000.000",
       contactLink: "https://wa.me/6281932122224"
     },
@@ -59,7 +59,7 @@ const sixBuildStBusinessPackagesData = {
         "Akta Pendirian Notaris",
         "SK Kemenkumham"
       ],
-      detailLink: "pendirian-yayasan.html",
+      detailLink: "pembuatan-yayasan.html",
       price: "Rp 3.500.000",
       contactLink: "https://wa.me/6281932122224"
     },
@@ -73,7 +73,7 @@ const sixBuildStBusinessPackagesData = {
         "Akta Pendirian Notaris",
         "SK Kemenkumham"
       ],
-      detailLink: "pendirian-firma.html",
+      detailLink: "pembuatan-firma.html",
       price: "Rp 3.000.000",
       contactLink: "https://wa.me/6281932122224"
     },
@@ -87,7 +87,7 @@ const sixBuildStBusinessPackagesData = {
         "Akta Pendirian Notaris",
         "SK Kemenkumham"
       ],
-      detailLink: "pendirian-pma.html",
+      detailLink: "pembuatan-pma.html",
       price: "Rp 3.000.000",
       contactLink: "https://wa.me/6281932122224"
     }
@@ -915,3 +915,4 @@ const viewFaqBusinessEntitySectionData = {
     }
   ]
 };
+
