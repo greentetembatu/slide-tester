@@ -330,35 +330,35 @@ const businessPackagesDataPma = {
 const aboutExplanationSections = {
   notarisWenika: {
     sectionId: "viewAboutExplan",
-    title: "Kantor Notaris",
-    subtitle: "Wenika Priastuti Agustini, SH., M.Kn",
+    title: "MASTER LEGAL",
+    subtitle: "Solusi kebutuhan bisnis dan legalitas anda",
     description:
-      "Kantor Notaris Wenika Priastuti Agustini, SH., M.Kn., merupakan sebuah institusi profesional yang berdiri sebagai pilar terpercaya di bidang hukum dan keabsahan dokumen. Dipimpin oleh seorang Notaris yang tidak hanya berkompeten di bidangnya, tetapi juga memiliki integritas serta dedikasi tinggi.",
+      "Master Legal adalah perusahaan jasa yang bergerak di bidang layanan notaris, khususnya untuk pendirian berbagai bentuk badan usaha dan Perusahaan. Dengan tim notaris dan konsultan hukum yang berpengalaman, kami memberikan solusi lengkap mulai dari konsultasi awal hingga akhir. Tujuan kami adalah memudahkan klien dalam mewujudkan entitas bisnis yang legal dan kuat secara hukum.",
     serviceTitle: "Ruang Lingkup Pelayanan:",
     services: [
       {
         title: "Pendirian PT",
-        desc: "Asistensi lengkap mulai dari pengecekan nama hingga pengurusan NIB. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi."
+        desc: "Asistensi lengkap mulai dari pengecekan nama, SK Kemenkumham, NPWP Badan, pengurusan NIB. dan yang lainnya."
       },
       {
         title: "Pendirian CV",
-        desc: "Solusi tepat bagi usaha dengan karakteristik mitra aktif dan pasif. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi."
+        desc: "Solusi tepat bagi usaha dengan karakteristik mitra aktif dan pasif."
       },
       {
         title: "Pembentukan Yayasan",
-        desc: "Mewujudkan visi sosial melalui pendirian perkumpulan berbadan hukum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi."
+        desc: "Mewujudkan visi sosial melalui pendirian perkumpulan berbadan hukum."
       },
       {
         title: "Pendirian Firma (Fa)",
-        desc: "Melayani persekutuan untuk profesional dengan nama bersama. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi."
+        desc: "Melayani persekutuan untuk profesional dengan nama bersama."
       },
       {
         title: "Pembentukan Koperasi",
-        desc: "Mendukung ekonomi kerakyatan sesuai prinsip koperasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi."
+        desc: "Mendukung ekonomi kerakyatan sesuai prinsip koperasi."
       },
       {
         title: "PMA",
-        desc: "Mengakomodasi kebutuhan secara legal. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi."
+        desc: "Mengakomodasi kebutuhan secara legal."
       }
     ],
     button: {
@@ -381,19 +381,19 @@ const superiorServicesSections = {
         icon: "fas fa-file-contract",
         title: "Pembuatan Akta",
         description:
-          "Pembuatan akta notaris untuk berbagai keperluan hukum seperti perjanjian, wasiat, dan pernyataan. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi."
+          "Pembuatan akta notaris untuk berbagai keperluan hukum seperti perjanjian, wasiat, dan pernyataan."
       },
       {
         icon: "fas fa-building",
         title: "Pendirian Perusahaan",
         description:
-          "Pendirian badan usaha seperti PT, CV, Firma, Koperasi, Yayasan, dan PMA. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi."
+          "Pendirian badan usaha seperti PT, CV, Firma, Koperasi, Yayasan, dan PMA."
       },
       {
         icon: "fas fa-gavel",
         title: "Konsultasi Hukum",
         description:
-          "Konsultasi hukum untuk perorangan dan perusahaan terkait dengan dokumen dan transaksi hukum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi."
+          "Konsultasi hukum untuk perorangan dan perusahaan terkait dengan dokumen dan transaksi hukum."
       }
     ]
   }
@@ -469,15 +469,13 @@ const viewNdInfoData = {
         "Kartu Tanda Penduduk (KTP)",
         "Kartu Keluarga (KK)",
         "NPWP Pribadi",
-        "Telah mempunyai nama CV",
-        "Telah mempunyai lokasi kedudukan CV",
         "Tujuan kegiatan usaha harus jelas",
       ],
     },
     {
       title: "ALUR PEMESANAN",
       items: [
-        "Menghubungi Call Center",
+        "Menghubungi Call Center Kami",
         "Estimasi penerbitan maksimal 2 hari kerja setelah penandatanganan Minuta.",
       ],
     },
@@ -523,10 +521,10 @@ const ISO_DATA = {
       image: "img/dokumen izin dokumen lainnya.png",
       alt: "dokumen izin 1",
     },
-    {
+    /*{
       image: "img/dokumen izin praktek.png",
       alt: "dokumen izin 2",
-    },
+    },*/
     {
       image: "img/dokumen izin SK Kemenkumham.png",
       alt: "dokumen izin 3",
