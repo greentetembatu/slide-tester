@@ -130,6 +130,52 @@ const businessPackagesDataPt = {
 
 
 
+/*<!--==================legalitasPertambangan==================-->*/
+const legalitasPertambangan = {
+  header: {
+    title: "URUS LEGALITAS PERTAMBANGAN?",
+    subtitle: {
+      prefix: "MASTER",
+      highlight: "LEGAL",
+      suffix: "SOLUSINYA!"
+    },
+    description:
+      "Permudah proses izin pertambangan Anda, Kami bantu pengurusan IUJP, IPP, dan dokumen lingkungan sesuai regulasi."
+  },
+
+  services: [
+    {
+      icon: "fas fa-file-contract",
+      code: "IUJP",
+      name: "IZIN USAHA JASA PERTAMBANGAN"
+    },
+    {
+      icon: "fas fa-truck-loading",
+      code: "IPP",
+      name: "IZIN PENGANGKUTAN & PENJUALAN"
+    },
+    {
+      icon: "fas fa-database",
+      code: "MODI",
+      name: "MINERBA ONE DATA INDONESIA"
+    },
+    {
+      icon: "fas fa-chart-line",
+      code: "MVP",
+      name: "MINERBA VALUE PLATFORM"
+    }
+  ],
+
+  footer: {
+    text: "Butuh konsultasi lebih lanjut?",
+    highlight: "Hubungi kami sekarang!",
+    button: {
+      link: "https://wa.me/6281932122224",
+      label: "Konsultasi Gratis",
+      icon: "fab fa-whatsapp"
+    }
+  }
+};
 
 
 

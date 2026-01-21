@@ -70,6 +70,80 @@ renderSixBuildStBusinessPackages(
 
 
 
+
+
+
+
+
+function renderLegalitasAdditionMine(container, data) {
+  if (!container || !data) return;
+
+  container.innerHTML = `
+    <div class="header-section-addition-mine">
+      <h1>${data.header.title}</h1>
+      <h2>
+        ${data.header.subtitle.prefix}
+        <span class="highlight-addition-mine">
+          ${data.header.subtitle.highlight}
+        </span>
+        ${data.header.subtitle.suffix}
+      </h2>
+      <p class="description-addition-mine">
+        ${data.header.description}
+      </p>
+    </div>
+
+    <div class="content-section-addition-mine">
+      ${data.services.map(service => `
+        <div class="service-card-addition-mine">
+          <div class="service-icon-addition-mine">
+            <i class="${service.icon}"></i>
+          </div>
+          <div class="service-abbrev-addition-mine">
+            ${service.code}
+          </div>
+          <div class="service-fullname-addition-mine">
+            ${service.name}
+          </div>
+        </div>
+      `).join("")}
+    </div>
+
+    <div class="footer-note-addition-mine">
+      <p>
+        ${data.footer.text}
+        <span>${data.footer.highlight}</span>
+      </p>
+      <a href="${data.footer.button.link}"
+         class="contact-btn-addition-mine">
+        <i class="${data.footer.button.icon}"></i>
+        ${data.footer.button.label}
+      </a>
+    </div>
+  `;
+}
+document
+  .querySelectorAll(".js-legalitas")
+  .forEach(el => {
+    renderLegalitasAdditionMine(el, legalitasPertambangan);
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*<!--==================packages-grid-complete-pt==================-->*/
 
 function renderBusinessPackage(targetId, data) {
