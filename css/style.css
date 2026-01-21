@@ -24,7 +24,7 @@ body {
   --color-hijau-muda: #75f2a7;
   --color-putih-light: #fdfaf5;
   --color-black: #211e1a;
-  --warna-emas:#d4af37;
+  --warna-emas: #d4af37;
 
   --h1: clamp(2.5rem, 5vw + 1rem, 4rem);
   --h2: clamp(2rem, 4vw + 0.5rem, 3rem);
@@ -56,7 +56,9 @@ body {
   background: var(--color-putih-light);
   padding: 10px 0;
   border-bottom: 1px solid var(--color-biru-muda);
-  transition: transform 0.1s ease, opacity 0.1s ease;
+  transition:
+    transform 0.1s ease,
+    opacity 0.1s ease;
   position: fixed;
   top: 0;
   left: 0;
@@ -77,7 +79,9 @@ body {
   font-size: var(--p2);
   font-family: var(--text-gemuk);
   padding: 3px 8px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
   border-radius: 8px;
 }
 .contact a:hover {
@@ -153,11 +157,13 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .logo-img {
-  height: 50px;
+  height: 60px;
   width: auto;
   border-radius: 10px;
 }
@@ -251,12 +257,10 @@ body {
   transition: all 0.3s ease;
   z-index: 1000;
   line-height: 1;
-
 }
 
 .dropdown-menu li {
   list-style: none;
-
 }
 
 .dropdown-menu a {
@@ -266,7 +270,6 @@ body {
   text-decoration: none;
   position: relative;
   transition: color 0.3s;
-
 }
 .dropdown-menu a::after {
   content: "";
@@ -391,7 +394,6 @@ body {
   .dropdown-menu.show {
     display: block;
   }
-
 }
 
 @media (min-width: 993px) {
@@ -406,8 +408,6 @@ body {
   opacity: 0;
 }
 
-
-
 .cover {
   display: none;
 }
@@ -416,10 +416,11 @@ body {
 /* ============HERO================ */
 
 #prime-showcase {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/bg-hero.png");
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bg-hero2.png");
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   color: white;
   padding: 100px 5% 30px 5%;
   display: flex;
@@ -437,15 +438,23 @@ body {
 }
 
 .hero-content {
-  flex: 0 0 70%;
+  /*flex: 0 0 70%;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .hero-content h4 {
   font-size: var(--h2);
   color: var(--color-putih-light);
   text-shadow: var(--text-shadow-putih);
   margin-bottom: 20px;
-  text-align: left; /* Teks rata kiri */
-  position: relative; 
+  text-align: center; /* Teks rata kiri */
+  position: relative;
 }
 
 /* PERBAIKAN: Hapus spasi sebelum ::after */
@@ -455,9 +464,7 @@ body {
   width: 120px;
   height: 3px;
   background: var(--color-hijau);
-  /* Karena teks h4 rata kiri (text-align: left), 
-     maka margin-nya jangan 'auto' agar garis ikut ke kiri */
-  margin: 5px 0 0 0; 
+  margin: 5px auto 0 auto; /* Ubah ini untuk membuat garis tengah */
   border-radius: 2px;
 }
 .hero-content h1 {
@@ -571,8 +578,8 @@ body {
 /* BREAKPOINT 992px */
 @media (max-width: 992px) {
   #prime-showcase {
-  padding: 30px 5% 30px 5%;
-}
+    padding: 30px 5% 30px 5%;
+  }
   .hero-container {
     flex-direction: column; /* Foto pindah ke bawah konten */
     text-align: center;
@@ -593,8 +600,8 @@ body {
     text-align: center;
   }
   .hero-content h4::after {
-  /* Gunakan margin: auto untuk menarik garis ke tengah */
-    margin: 15px auto 0 auto; 
+    /* Gunakan margin: auto untuk menarik garis ke tengah */
+    margin: 15px auto 0 auto;
     width: 100px; /* Opsional: perkecil sedikit lebar garis di mobile */
   }
   .hero-content h1 {
@@ -607,7 +614,7 @@ body {
   }
 
   .hero-btns {
-    display: none;
+    display: flex;
   }
   .hero-btns-image {
     display: flex;
@@ -662,15 +669,15 @@ body {
   color: var(--color-black);
   display: inline-block;
   text-transform: uppercase;
-  position: relative; 
+  position: relative;
 }
 
 /* Menambahkan garis bawah */
 .six-build-st-section-title h1::after {
   content: "";
   display: block;
-  width: 80px;        /* Lebar garis */
-  height: 4px;        /* Ketebalan garis */
+  width: 80px; /* Lebar garis */
+  height: 4px; /* Ketebalan garis */
   background: var(--color-hijau); /* Warna garis */
   margin: 10px auto 0; /* Memberi jarak atas dan menaruh di tengah */
   border-radius: 10px; /* Membuat ujung garis membulat */
@@ -957,7 +964,6 @@ body {
 
 .six-build-st-btn-contact:hover {
   background: var(--color-abu-gelap);
-  
 }
 
 /* Animasi Keyframes */
@@ -1006,13 +1012,13 @@ body {
 /* Tombol untuk memutar ulang animasi */
 @media (max-width: 992px) {
   .six-build-st-section-title h1 {
-  color: var(--color-black);
-}
+    color: var(--color-black);
+  }
 
-.six-build-st-section-title p {
-  color: var(--color-black);
-  /*max-width: 600px;*/
-}
+  .six-build-st-section-title p {
+    color: var(--color-black);
+    /*max-width: 600px;*/
+  }
   .six-build-st-business-packages {
     margin-top: 0;
   }
@@ -1053,9 +1059,182 @@ body {
   }
 }
 
+/* ============container-addition-mine================ */
+/* ============container-addition-mine================ */
+/* ============container-addition-mine================ */
+
+.container-addition-mine {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.legalitas-card-addition-mine {
+  /*background-color: #fff;*/
+  /*border-radius: 15px;*/
+  overflow: hidden;
+  /*box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);*/
+  display: flex;
+  flex-direction: column;
+}
+
+.header-section-addition-mine {
+  /*background: linear-gradient(135deg, #1e5799 0%, #2989d8 50%, #207cca 100%);*/
+  padding: 40px;
+  text-align: center;
+}
+
+.header-section-addition-mine h1 {
+  font-size: var(--h3);
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-section-addition-mine h2 {
+  font-size: var(--h4);
+  font-weight: 700;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.highlight-addition-mine {
+  color: #ffcc00;
+  font-weight: 800;
+}
+
+.description-addition-mine {
+  font-size: var(--h6);
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content-section-addition-mine {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card-addition-mine {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 25px;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-top: 5px solid #2989d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-card-addition-mine:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.service-icon-addition-mine {
+  background-color: #2989d8;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: var(--h2);
+  color: white;
+  box-shadow: 0 5px 10px rgba(41, 137, 216, 0.3);
+}
+
+.service-abbrev-addition-mine {
+  font-size: var(--h6);
+  font-weight: 800;
+  color: #1e5799;
+  margin-bottom: 5px;
+}
+
+.service-fullname-addition-mine {
+  font-size: var(--p);
+  color: #555;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.footer-note-addition-mine {
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+  padding: 25px;
+  font-size: var(--p);
+  font-weight: 600;
+  border-top: 1px solid #eee;
+}
+
+.footer-note-addition-mine span {
+  color: #2989d8;
+  font-weight: 800;
+}
+
+.contact-btn-addition-mine {
+  display: inline-block;
+  background: linear-gradient(135deg, #d4af37, #f3e7b3);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: var(--p2);
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+
+}
+
+
+.contact-btn-addition-mine:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.5);
+  filter: brightness(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .content-section-addition-mine {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section-addition-mine {
+    padding: 30px 20px;
+  }
+
+  .content-section-addition-mine {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .service-card-addition-mine {
+    padding: 20px;
+  }
+}
+
+
 /* ===============business-packages-complete-pt=============== */
 /* --- CONTAINER UTAMA (6 Elemen) --- */
-.business-packages-complete-pt, 
+.business-packages-complete-pt,
 .business-packages-complete-cv,
 .business-packages-complete-yayasan,
 .business-packages-complete-koperasi,
@@ -1085,7 +1264,7 @@ body {
 .package-card-complete-firma,
 .package-card-complete-pma {
   display: flex;
-  flex-direction: row-reverse; 
+  flex-direction: row-reverse;
   width: 100%;
   min-height: 600px;
   position: relative;
@@ -1108,21 +1287,33 @@ body {
 }
 
 /* Judul & Teks (Menggunakan Selector Grouping) */
-.section-title-complete-pt h1, .section-title-complete-cv h1, .section-title-complete-yayasan h1,
-.section-title-complete-koperasi h1, .section-title-complete-firma h1, .section-title-complete-pma h1 {
+.section-title-complete-pt h1,
+.section-title-complete-cv h1,
+.section-title-complete-yayasan h1,
+.section-title-complete-koperasi h1,
+.section-title-complete-firma h1,
+.section-title-complete-pma h1 {
   font-size: var(--h3);
   color: #d4af37;
   margin-bottom: 10px;
 }
 
-.section-title-complete-pt p, .section-title-complete-cv p, .section-title-complete-yayasan p,
-.section-title-complete-koperasi p, .section-title-complete-firma p, .section-title-complete-pma p {
+.section-title-complete-pt p,
+.section-title-complete-cv p,
+.section-title-complete-yayasan p,
+.section-title-complete-koperasi p,
+.section-title-complete-firma p,
+.section-title-complete-pma p {
   color: #ccc;
   margin-bottom: 30px;
 }
 
-.package-name-complete-pt, .package-name-complete-cv, .package-name-complete-yayasan,
-.package-name-complete-koperasi, .package-name-complete-firma, .package-name-complete-pma {
+.package-name-complete-pt,
+.package-name-complete-cv,
+.package-name-complete-yayasan,
+.package-name-complete-koperasi,
+.package-name-complete-firma,
+.package-name-complete-pma {
   font-size: var(--p);
   color: var(--color-putih-light);
   margin-bottom: 15px;
@@ -1135,24 +1326,36 @@ body {
   margin: 25px 0;
 }
 
-.features-complete-pt, .features-complete-cv, .features-complete-yayasan,
-.features-complete-koperasi, .features-complete-firma, .features-complete-pma,
+.features-complete-pt,
+.features-complete-cv,
+.features-complete-yayasan,
+.features-complete-koperasi,
+.features-complete-firma,
+.features-complete-pma,
 .bonus-section-split {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.feature-item-complete-pt, .feature-item-complete-cv, .feature-item-complete-yayasan,
-.feature-item-complete-koperasi, .feature-item-complete-firma, .feature-item-complete-pma {
+.feature-item-complete-pt,
+.feature-item-complete-cv,
+.feature-item-complete-yayasan,
+.feature-item-complete-koperasi,
+.feature-item-complete-firma,
+.feature-item-complete-pma {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: var(--p2);
 }
 
-.feature-item-complete-pt i, .feature-item-complete-cv i, .feature-item-complete-yayasan i,
-.feature-item-complete-koperasi i, .feature-item-complete-firma i, .feature-item-complete-pma i {
+.feature-item-complete-pt i,
+.feature-item-complete-cv i,
+.feature-item-complete-yayasan i,
+.feature-item-complete-koperasi i,
+.feature-item-complete-firma i,
+.feature-item-complete-pma i {
   color: #d4af37;
 }
 
@@ -1169,8 +1372,12 @@ body {
   background: #222;
 }
 
-.card-image-side-complete-pt img, .card-image-side-complete-cv img, .card-image-side-complete-yayasan img,
-.card-image-side-complete-koperasi img, .card-image-side-complete-firma img, .card-image-side-complete-pma img {
+.card-image-side-complete-pt img,
+.card-image-side-complete-cv img,
+.card-image-side-complete-yayasan img,
+.card-image-side-complete-koperasi img,
+.card-image-side-complete-firma img,
+.card-image-side-complete-pma img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1253,7 +1460,7 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .footer-action-split {
     flex-direction: column;
     align-items: flex-start;
@@ -1383,7 +1590,6 @@ body {
     max-width: 100%;
     text-align: left; /* Opsional: buat rata tengah di mobile */
   }
-
 }
 
 /* Subtitle Ruang Lingkup */
@@ -1480,7 +1686,8 @@ body {
   left: 0;
   width: 100%;
   height: 120%; /* Lebih tinggi untuk efek gerak */
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../img/women-office.png") center/cover no-repeat;
 
   z-index: 1;
@@ -1592,7 +1799,6 @@ body {
   .why-us-grid {
     grid-template-columns: 1fr;
   }
-
 }
 
 /*================view-nd-info-section================*/
@@ -1611,10 +1817,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, #ffffff 1px, transparent 1px),
+  background-image:
+    radial-gradient(circle, #ffffff 1px, transparent 1px),
     radial-gradient(circle, #ffffff 1px, transparent 1px);
-  background-size: 80px 80px, 120px 120px;
-  background-position: 0 0, 40px 40px;
+  background-size:
+    80px 80px,
+    120px 120px;
+  background-position:
+    0 0,
+    40px 40px;
   opacity: 0.3;
   z-index: 1;
 }
@@ -1646,12 +1857,12 @@ body {
 .view-nd-info-column h2::after {
   content: "";
   display: block;
-  width: 70px;         /* Lebar garis */
-  height: 4px;         /* Ketebalan garis */
+  width: 70px; /* Lebar garis */
+  height: 4px; /* Ketebalan garis */
   background: var(--color-hijau);
-  margin-top: 10px;    /* Jarak antara teks dan garis */
-  border-radius: 5px;  /* Membuat ujung garis halus */
-  
+  margin-top: 10px; /* Jarak antara teks dan garis */
+  border-radius: 5px; /* Membuat ujung garis halus */
+
   /* Jika h2 rata kiri, gunakan ini: */
   margin-left: 0;
   margin-right: auto;
@@ -1664,7 +1875,9 @@ body {
 
 .view-nd-info-list-unstyled li {
   margin-bottom: 15px;
-  color: var(--color-black); /* Warna teks agak abu agar tidak terlalu kontras */
+  color: var(
+    --color-black
+  ); /* Warna teks agak abu agar tidak terlalu kontras */
   font-size: var(--h6);
 }
 
@@ -2199,7 +2412,6 @@ body {
   transform: scale(1.1);
   background-color: var(--wa-dark-green);
   opacity: 1;
-
 }
 
 /* Menu Pop-up */
@@ -2283,10 +2495,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, #ffffff 1.2px, transparent 1.2px),
+  background-image:
+    radial-gradient(circle, #ffffff 1.2px, transparent 1.2px),
     radial-gradient(circle, #ffffff 1px, transparent 1px);
-  background-size: 130px 130px, 180px 180px;
-  background-position: 0 0, 40px 40px;
+  background-size:
+    130px 130px,
+    180px 180px;
+  background-position:
+    0 0,
+    40px 40px;
   opacity: 0.3;
   z-index: 1;
 }
@@ -2313,7 +2530,7 @@ body {
   height: 3px;
   background: var(--color-hijau);
   /* Margin auto di kiri dan kanan akan membuat garis ke tengah */
-  margin: 15px auto 0; 
+  margin: 15px auto 0;
   border-radius: 2px;
 }
 
@@ -2549,22 +2766,24 @@ Visi & Misi Kami
 }
 
 .tab-detail-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .tab-detail-item .icon {
-    width: 35px;           /* Memberikan lebar tetap agar teks sejajar tegak lurus */
-    font-size: 1.1rem;
-    color: var(--primary); /* Menggunakan warna hijau/biru dari palette fresh Anda */
-    display: flex;
-    justify-content: center;
-    margin-right: 10px;
+  width: 35px; /* Memberikan lebar tetap agar teks sejajar tegak lurus */
+  font-size: 1.1rem;
+  color: var(
+    --primary
+  ); /* Menggunakan warna hijau/biru dari palette fresh Anda */
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
 }
 
 .tab-detail-item p {
-    margin: 0;             /* Menghilangkan margin bawaan p agar sejajar tengah dengan ikon */
+  margin: 0; /* Menghilangkan margin bawaan p agar sejajar tengah dengan ikon */
 }
 
 /* Right Column: Form */
@@ -2666,10 +2885,15 @@ Visi & Misi Kami
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, #3c3535 1px, transparent 1px),
+  background-image:
+    radial-gradient(circle, #3c3535 1px, transparent 1px),
     radial-gradient(circle, #362d2d 0.8px, transparent 0.8px);
-  background-size: 100px 100px, 150px 150px;
-  background-position: 0 0, 40px 40px;
+  background-size:
+    100px 100px,
+    150px 150px;
+  background-position:
+    0 0,
+    40px 40px;
   opacity: 0.2;
   z-index: 1;
 }
@@ -2700,7 +2924,9 @@ Visi & Misi Kami
   border-radius: 12px;
   overflow: hidden;
   text-align: left;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
   border: 1px solid #222;
   display: flex;
   flex-direction: column;
@@ -2859,10 +3085,15 @@ Visi & Misi Kami
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, #ffffff 1px, transparent 1px),
+  background-image:
+    radial-gradient(circle, #ffffff 1px, transparent 1px),
     radial-gradient(circle, #ffffff 0.8px, transparent 0.8px);
-  background-size: 100px 100px, 150px 150px;
-  background-position: 0 0, 40px 40px;
+  background-size:
+    100px 100px,
+    150px 150px;
+  background-position:
+    0 0,
+    40px 40px;
   opacity: 0.15;
   z-index: 1;
 }
@@ -3132,7 +3363,6 @@ Visi & Misi Kami
   }
 }
 
-
 /* ===============TREE STEEP WAY EASY================= */
 /* ============================== */
 
@@ -3160,7 +3390,7 @@ Visi & Misi Kami
   display: inline-block; /* Agar kontainer h2 hanya selebar teksnya */
 }
 .view-tab-steps-content h2::after {
-content: "";
+  content: "";
   display: block;
   width: 80px; /* Ukuran lebih proporsional */
   height: 4px;
@@ -3238,11 +3468,11 @@ content: "";
   }
   .view-tab-steps-content h2 {
     margin-bottom: 20px;
-    
+
     /* PENTING: display inline-block membuat h2 selebar teksnya saja.
        Ini memudahkan margin: auto pada ::after untuk mencari titik tengah.
     */
-    display: inline-block; 
+    display: inline-block;
   }
 
   .view-tab-steps-content h2::after {
@@ -3253,9 +3483,6 @@ content: "";
     width: 60px; /* Opsional: sedikit diperkecil untuk mobile */
   }
 }
-
-
-
 
 /* =============FAQ================= */
 /* =============FAQ================= */
@@ -3356,7 +3583,6 @@ content: "";
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   background-color: var(--warna-emas);
-
 }
 
 .view-faq-answer p {
@@ -3373,19 +3599,6 @@ content: "";
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ============================== */
 
@@ -3466,53 +3679,56 @@ footer {
   font-size: 14px;
 }
 
-
-
-
-
 /* Container Ikon Sosial Media */
 .footer-social-icons {
-    display: flex;
-    gap: 12px;
-    margin-top: 25px;
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
 }
 
 /* Style Dasar Ikon */
 .footer-social-link {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.05); /* Latar belakang tipis */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%; /* Membuat lingkaran */
-    color: #ccc;
-    font-size: 18px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05); /* Latar belakang tipis */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Membuat lingkaran */
+  color: #ccc;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Efek Hover Umum */
 .footer-social-link:hover {
-    transform: translateY(-5px); /* Melayang sedikit ke atas */
-    color: white;
-    border-color: transparent;
+  transform: translateY(-5px); /* Melayang sedikit ke atas */
+  color: white;
+  border-color: transparent;
 }
 
 /* Efek Warna Spesifik saat Hover */
 .footer-social-link.instagram:hover {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
 
 .footer-social-link.facebook:hover {
-    background: #1877F2;
+  background: #1877f2;
 }
 
 .footer-social-link.linkedin:hover {
-    background: #0077B5;
+  background: #0077b5;
 }
 
 .footer-social-link.whatsapp:hover {
-    background: #25D366;
+  background: #25d366;
 }
