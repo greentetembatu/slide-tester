@@ -1239,7 +1239,8 @@ body {
 .business-packages-complete-yayasan,
 .business-packages-complete-koperasi,
 .business-packages-complete-firma,
-.business-packages-complete-pma {
+.business-packages-complete-pma,
+.business-packages-complete-pembubaran-pt {
   background-color: #000;
   overflow: hidden;
   color: #fff;
@@ -1249,6 +1250,7 @@ body {
 }
 
 .packages-grid-complete-pt,
+.packages-grid-complete-pembubaran-pt,
 .packages-grid-complete-cv,
 .packages-grid-complete-yayasan,
 .packages-grid-complete-koperasi,
@@ -1258,6 +1260,7 @@ body {
 }
 
 .package-card-complete-pt,
+.package-card-complete-pembubaran-pt,
 .package-card-complete-cv,
 .package-card-complete-koperasi,
 .package-card-complete-yayasan,
@@ -1272,6 +1275,7 @@ body {
 
 /* --- KONTEN / SISI KANAN (6 Elemen) --- */
 .card-content-complete-pt,
+.card-content-complete-pembubaran-pt,
 .card-content-complete-cv,
 .card-content-complete-yayasan,
 .card-content-complete-koperasi,
@@ -1288,6 +1292,7 @@ body {
 
 /* Judul & Teks (Menggunakan Selector Grouping) */
 .section-title-complete-pt h1,
+.section-title-complete-pembubaran-pt h1,
 .section-title-complete-cv h1,
 .section-title-complete-yayasan h1,
 .section-title-complete-koperasi h1,
@@ -1299,6 +1304,7 @@ body {
 }
 
 .section-title-complete-pt p,
+.section-title-complete-pembubaran-pt p,
 .section-title-complete-cv p,
 .section-title-complete-yayasan p,
 .section-title-complete-koperasi p,
@@ -1308,8 +1314,9 @@ body {
   margin-bottom: 30px;
 }
 
-.package-name-complete-pt,
 .package-name-complete-cv,
+.package-name-complete-pembubaran-pt,
+.package-name-complete-pt,
 .package-name-complete-yayasan,
 .package-name-complete-koperasi,
 .package-name-complete-firma,
@@ -1327,6 +1334,7 @@ body {
 }
 
 .features-complete-pt,
+.features-complete-pembubaran-pt,
 .features-complete-cv,
 .features-complete-yayasan,
 .features-complete-koperasi,
@@ -1339,6 +1347,7 @@ body {
 }
 
 .feature-item-complete-pt,
+.feature-item-complete-pembubaran-pt,
 .feature-item-complete-cv,
 .feature-item-complete-yayasan,
 .feature-item-complete-koperasi,
@@ -1351,6 +1360,7 @@ body {
 }
 
 .feature-item-complete-pt i,
+.feature-item-complete-pembubaran-pt i,
 .feature-item-complete-cv i,
 .feature-item-complete-yayasan i,
 .feature-item-complete-koperasi i,
@@ -1361,6 +1371,7 @@ body {
 
 /* --- GAMBAR / SISI KIRI (6 Elemen) --- */
 .card-image-side-complete-pt,
+.card-image-side-complete-pembubaran-pt,
 .card-image-side-complete-cv,
 .card-image-side-complete-yayasan,
 .card-image-side-complete-koperasi,
@@ -1373,6 +1384,7 @@ body {
 }
 
 .card-image-side-complete-pt img,
+.card-image-side-complete-pembubaran-pt img,
 .card-image-side-complete-cv img,
 .card-image-side-complete-yayasan img,
 .card-image-side-complete-koperasi img,
@@ -1427,6 +1439,7 @@ body {
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .package-card-complete-pt,
+  .package-card-complete-pembubaran-pt,
   .package-card-complete-cv,
   .package-card-complete-yayasan,
   .package-card-complete-koperasi,
@@ -1437,6 +1450,7 @@ body {
   }
 
   .card-content-complete-pt,
+  .card-content-complete-pembubaran-pt,
   .card-content-complete-cv,
   .card-content-complete-yayasan,
   .card-content-complete-koperasi,
@@ -1447,6 +1461,7 @@ body {
   }
 
   .card-image-side-complete-pt,
+  .card-image-side-complete-pembubaran-pt,
   .card-image-side-complete-cv,
   .card-image-side-complete-yayasan,
   .card-image-side-complete-koperasi,
@@ -3635,8 +3650,13 @@ footer {
 
 .footer-logo-line1,
 .footer-logo-line2 {
-  font-weight: 600;
+  font-weight: 800;
+  font-size: var(--h5);
 }
+.footer-logo-line1 .text-highlight{
+  color: var(--color-coklat-keemasan);
+}
+
 
 .footer-col h3 {
   margin-bottom: 20px;
