@@ -607,6 +607,85 @@ renderBusinessPackagePma(
 );
 
 
+
+
+
+
+
+
+
+
+
+
+
+function renderBusinessPackagePembubaranPT(targetId, data) {
+  const container = document.getElementById(targetId);
+  if (!container) return;
+
+  container.innerHTML = `
+    <div class="packages-grid-complete-pembubaran-pt">
+      <div class="package-card-complete-pembubaran-pt">
+        <div class="card-content-complete-pembubaran-pt">
+
+          <div class="section-title-complete-pembubaran-pt">
+            <h1>${data.title}</h1>
+            <p>${data.subtitle}</p>
+          </div>
+
+          <div class="package-info-header">
+            <div class="package-type-complete-pembubaran-pt">${data.type}</div>
+            <h2 class="package-name-complete-pembubaran-pt">${data.name}</h2>
+          </div>
+
+          <p class="package-desc-complete-pembubaran-pt">${data.description}</p>
+
+          <div class="features-wrapper-split">
+            <div class="features-complete-pt">
+              ${data.features.map(item => `
+                <div class="feature-item-complete-pembubaran-pt">
+                  <i class="fas fa-check-circle"></i>
+                  <span>${item}</span>
+                </div>
+              `).join("")}
+            </div>
+
+            <div class="bonus-section-split">
+              <div class="package-type-complete-pembubaran-pt-bomus">Bonus</div>
+              ${data.bonus.map(item => `
+                <div class="feature-item-complete-pembubaran-pt">
+                  <i class="fas fa-gift"></i>
+                  <span>${item}</span>
+                </div>
+              `).join("")}
+            </div>
+          </div>
+
+          <div class="footer-action-split">
+            <div class="package-price">${data.price}</div>
+            <a href="${data.contactLink}" class="btn-contact-split">
+              <i class="fab fa-whatsapp"></i>
+              <span>Hubungi Kami</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="card-image-side-complete-pembubaran-pt">
+          <div class="diagonal-overlay"></div>
+          <img src="${data.image.src}" alt="${data.image.alt}">
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+renderBusinessPackagePembubaranPT(
+  "businessPackagesCompletePembubaranPt",
+  businessPackagesDataPembubaranPt.completePembubaranPt
+);
+
+
+
 /*<!--==================view-about-explan==================-->*/
 function renderAboutExplanation(targetId, data) {
   const container = document.getElementById(targetId);

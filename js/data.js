@@ -88,7 +88,22 @@ const sixBuildStBusinessPackagesData = {
         "SK Kemenkumham"
       ],
       detailLink: "pembuatan-pma.html",
-      price: "Rp 3.000.000",
+      price: "Rp 10.000.000",
+      contactLink: "https://wa.me/6281932122224"
+    },
+    {
+      badge: "POPULAR",
+      type: "Paket Pembubaran",
+      name: "Paket Pembubaran PT",
+      description: "PT sudah tidak aktif? Jangan dibiarkan begitu saja. Agar tidak menimbulkan sengketa atau kewajiban hukum di masa depan, PT harus dibubarkan secara resmi dan sesuai degan regulasi.",
+      features: [
+        "Pembuatan Akta Pembubaran.",
+        "Pengumuman resmi di media",
+        "Pengurusan SK Pembubaran dari Kemenkumham",
+        "Pencabutan izin & dokumen administratif lainnya"
+      ],
+      detailLink: "pembubaran-pt.html",
+      price: "Rp 15.000.000",
       contactLink: "https://wa.me/6281932122224"
     }
   ]
@@ -96,37 +111,6 @@ const sixBuildStBusinessPackagesData = {
 
 
 
-/*<!--==================businessPackagesCompletePt==================-->*/
-
-const businessPackagesDataPt = {
-  completePt: {
-    sectionId: "businessPackagesCompletePt",
-    title: "Bangun Bisnis Anda",
-    subtitle: "Pilih paket pendirian perusahaan yang sesuai dengan kebutuhan bisnis Anda",
-    type: "Paket Pendirian",
-    name: "PT. Lengkap",
-    description: "Paket lengkap pendirian PT. Proses cepat dan terpercaya sesuai dengan regulasi.",
-    features: [
-        "Pengecekan Nama PT.",
-        "Akta Pendirian Notaris",
-        "SK Kemenkumham",
-        "NPWP Badan",
-        "SKT KPP",
-        "NIB",
-        "Akun OSS RBA",
-        "Rekening Giro"
-    ],
-    bonus: [
-      "Rekening Perusahaan"
-    ],
-    price: "Rp 4.000.000",
-    contactLink: "https://wa.me/6281932122224",
-    image: {
-      src: "img/women-office.png",
-      alt: "Office Professional"
-    }
-  }
-};
 
 
 
@@ -184,6 +168,37 @@ const legalitasPertambangan = {
 
 
 
+/*<!--==================businessPackagesCompletePt==================-->*/
+
+const businessPackagesDataPt = {
+  completePt: {
+    sectionId: "businessPackagesCompletePt",
+    title: "Bangun Bisnis Anda",
+    subtitle: "Pilih paket pendirian perusahaan yang sesuai dengan kebutuhan bisnis Anda",
+    type: "Paket Pendirian",
+    name: "PT. Lengkap",
+    description: "Paket lengkap pendirian PT. Proses cepat dan terpercaya sesuai dengan regulasi.",
+    features: [
+        "Pengecekan Nama PT.",
+        "Akta Pendirian Notaris",
+        "SK Kemenkumham",
+        "NPWP Badan",
+        "SKT KPP",
+        "NIB",
+        "Akun OSS RBA",
+        "Rekening Giro"
+    ],
+    bonus: [
+      "Rekening Perusahaan"
+    ],
+    price: "Rp 4.000.000",
+    contactLink: "https://wa.me/6281932122224",
+    image: {
+      src: "img/women-office.png",
+      alt: "Office Professional"
+    }
+  }
+};
 
 
 /*<!--==================businessPackagesCompleteCv==================-->*/
@@ -361,7 +376,7 @@ const businessPackagesDataPma = {
       "-",
       "-"
     ],
-    price: "Rp 3.000.000",
+    price: "Rp 10.000.000",
     contactLink: "https://wa.me/6281932122224",
     image: {
       src: "img/room4.jpg",
@@ -369,6 +384,50 @@ const businessPackagesDataPma = {
     }
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+const businessPackagesDataPembubaranPt = {
+  completePembubaranPt: {
+    sectionId: "businessPackagesCompletePembubaranPt",
+    title: "Tutup Bisnis Anda dengan Benar",
+    subtitle: "Pilih paket Pembubaran perusahaan sesuai dengan regulasi",
+    type: "Pembubaran Perusahaan",
+    name: "Pembubaran PT.",
+    description: "PT sudah tidak aktif? Jangan dibiarkan begitu saja. Agar tidak menimbulkan sengketa atau kewajiban hukum di masa depan, PT harus dibubarkan secara resmi dan sesuai dengan .",
+    features: [
+        "Pembuatan Akta Pembubaran",
+        "Pengumuman resmi di media",
+        "Pengurusan SK Pembubaran dari Kemenkumham",
+        "Pencabutan izin & dokumen administratif lainnya"
+    ],
+    bonus: [
+      "Konsultasi Hukum Gratis"
+    ],
+    price: "Rp 15.000.000",
+    contactLink: "https://wa.me/6281932122224",
+    image: {
+      src: "img/women-office.png",
+      alt: "Office Professional"
+    }
+  }
+};
+
+
+
+
+
+
 
 
 
