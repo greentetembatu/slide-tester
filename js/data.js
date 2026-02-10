@@ -19,7 +19,7 @@ const sixBuildStBusinessPackagesData = {
       ],
       detailLink: "pembuatan-pt.html",
       price: "Rp 4.000.000",
-      contactLink: "https://wa.me/6281932122224"
+      contactLink: "https://wa.me/6282299950656"
     },
     {
       badge: "POPULAR",
@@ -33,7 +33,7 @@ const sixBuildStBusinessPackagesData = {
       ],
       detailLink: "pembuatan-cv.html",
       price: "Rp 3.000.000",
-      contactLink: "https://wa.me/6281932122224"
+      contactLink: "https://wa.me/6282299950656"
     },
     {
       badge: "POPULAR",
@@ -47,7 +47,7 @@ const sixBuildStBusinessPackagesData = {
       ],
       detailLink: "pembuatan-koperasi.html",
       price: "Rp 3.000.000",
-      contactLink: "https://wa.me/6281932122224"
+      contactLink: "https://wa.me/6282299950656"
     },
     {
       badge: "POPULAR",
@@ -61,7 +61,7 @@ const sixBuildStBusinessPackagesData = {
       ],
       detailLink: "pembuatan-yayasan.html",
       price: "Rp 3.500.000",
-      contactLink: "https://wa.me/6281932122224"
+      contactLink: "https://wa.me/6282299950656"
     },
     {
       badge: "POPULAR",
@@ -75,7 +75,7 @@ const sixBuildStBusinessPackagesData = {
       ],
       detailLink: "pembuatan-firma.html",
       price: "Rp 3.000.000",
-      contactLink: "https://wa.me/6281932122224"
+      contactLink: "https://wa.me/6282299950656"
     },
     {
       badge: "POPULAR",
@@ -89,7 +89,7 @@ const sixBuildStBusinessPackagesData = {
       ],
       detailLink: "pembuatan-pma.html",
       price: "Rp 10.000.000",
-      contactLink: "https://wa.me/6281932122224"
+      contactLink: "https://wa.me/6282299950656"
     },
     {
       badge: "POPULAR",
@@ -104,7 +104,7 @@ const sixBuildStBusinessPackagesData = {
       ],
       detailLink: "pembubaran-pt.html",
       price: "Rp 15.000.000",
-      contactLink: "https://wa.me/6281932122224"
+      contactLink: "https://wa.me/6282299950656"
     }
   ]
 };
@@ -154,7 +154,7 @@ const legalitasPertambangan = {
     text: "Butuh konsultasi lebih lanjut?",
     highlight: "Hubungi kami sekarang!",
     button: {
-      link: "https://wa.me/6281932122224",
+      link: "https://wa.me/6282299950656",
       label: "Konsultasi Gratis",
       icon: "fab fa-whatsapp"
     }
@@ -189,10 +189,11 @@ const businessPackagesDataPt = {
         "Rekening Giro"
     ],
     bonus: [
-      "Rekening Perusahaan"
+      //"Rekening Perusahaan"
+      "-"
     ],
     price: "Rp 4.000.000",
-    contactLink: "https://wa.me/6281932122224",
+    contactLink: "https://wa.me/6282299950656",
     image: {
       src: "img/women-office.png",
       alt: "Office Professional"
@@ -226,7 +227,7 @@ const businessPackagesDataCv = {
       "-"
     ],
     price: "Rp 3.000.000",
-    contactLink: "https://wa.me/6281932122224",
+    contactLink: "https://wa.me/6282299950656",
     image: {
       src: "img/room4.jpg",
       alt: "Office Professional"
@@ -263,7 +264,7 @@ const businessPackagesDataKoperasi = {
       "-"
     ],
     price: "Rp 3.000.000",
-    contactLink: "https://wa.me/6281932122224",
+    contactLink: "https://wa.me/6282299950656",
     image: {
       src: "img/room-3.jpg",
       alt: "Office Professional"
@@ -302,7 +303,7 @@ const businessPackagesDataYayasan = {
       "-"
     ],
     price: "Rp 3.500.000",
-    contactLink: "https://wa.me/6281932122224",
+    contactLink: "https://wa.me/6282299950656",
     image: {
       src: "img/room-2.jpg",
       alt: "Office Professional"
@@ -339,7 +340,7 @@ const businessPackagesDataFirma = {
       "-"
     ],
     price: "Rp 3.000.000",
-    contactLink: "https://wa.me/6281932122224",
+    contactLink: "https://wa.me/6282299950656",
     image: {
       src: "img/room-1.jpg",
       alt: "Office Professional"
@@ -377,7 +378,7 @@ const businessPackagesDataPma = {
       "-"
     ],
     price: "Rp 10.000.000",
-    contactLink: "https://wa.me/6281932122224",
+    contactLink: "https://wa.me/6282299950656",
     image: {
       src: "img/room4.jpg",
       alt: "Office Professional"
@@ -415,7 +416,7 @@ const businessPackagesDataPembubaranPt = {
       "Konsultasi Hukum Gratis"
     ],
     price: "Rp 15.000.000",
-    contactLink: "https://wa.me/6281932122224",
+    contactLink: "https://wa.me/6282299950656",
     image: {
       src: "img/women-office.png",
       alt: "Office Professional"
@@ -468,7 +469,7 @@ const aboutExplanationSections = {
     ],
     button: {
       text: "Konsultasi Sekarang",
-      link: "https://wa.me/6281932122224"
+      link: "https://wa.me/6282299950656"
     }
   }
 
@@ -691,7 +692,7 @@ const viewCareerJobVacancySectionData = {
       position: "Accounting",
       qualificationLabel: "Kualifikasi:",
       qualificationText: "Wanita, Pendidikan S1., Bersedia ditempatkan di seluruh cabang kami.",
-      applyLink: "mailto:wenikapriastuti@gmail.com",
+      applyLink: "mailto:mrmasterlegal@gmail.com",
       applyBtnClass: "view-btn-apply-carrer",
       applyText: "Lamar Sekarang",
     },
@@ -700,7 +701,7 @@ const viewCareerJobVacancySectionData = {
       position: "Marketing",
       qualificationLabel: "Kualifikasi:",
       qualificationText: "Wanita, Pendidikan SMA-SMK., Bersedia ditempatkan di seluruh cabang kami.",
-      applyLink: "mailto:wenikapriastuti@gmail.com",
+      applyLink: "mailto:mrmasterlegal@gmail.com",
       applyBtnClass: "view-btn-apply-carrer",
       applyText: "Lamar Sekarang",
     },
@@ -709,7 +710,7 @@ const viewCareerJobVacancySectionData = {
       position: "Digital Marketing",
       qualificationLabel: "Kualifikasi:",
       qualificationText: "Wanita, Pendidikan SMA/SMK, Mahir Menggunakan Gadjet/ Perangkat IT dan Sosial Media., Bersedia ditempatkan di seluruh cabang kami.",
-      applyLink: "mailto:wenikapriastuti@gmail.com",
+      applyLink: "mailto:mrmasterlegal@gmail.com",
       applyBtnClass: "view-btn-apply-carrer",
       applyText: "Lamar Sekarang",
     },
@@ -718,7 +719,7 @@ const viewCareerJobVacancySectionData = {
       position: "Legal Officer",
       qualificationLabel: "Kualifikasi:",
       qualificationText: "Wanita, Pendidikan S1., Bersedia ditempatkan di seluruh cabang kami.",
-      applyLink: "mailto:wenikapriastuti@gmail.com",
+      applyLink: "mailto:mrmasterlegal@gmail.com",
       applyBtnClass: "view-btn-apply-carrer",
       applyText: "Lamar Sekarang",
     },
@@ -727,7 +728,7 @@ const viewCareerJobVacancySectionData = {
       position: "Admin Support",
       qualificationLabel: "Kualifikasi:",
       qualificationText: "Wanita, Pendidikan S1., Bersedia ditempatkan di seluruh cabang kami.",
-      applyLink: "mailto:wenikapriastuti@gmail.com",
+      applyLink: "mailto:mrmasterlegal@gmail.com",
       applyBtnClass: "view-btn-apply-carrer",
       applyText: "Lamar Sekarang",
     },

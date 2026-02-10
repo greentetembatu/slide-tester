@@ -530,18 +530,18 @@ const CS_CONTACTS = [
   {
     name: "CS Admin Utama",
     role: "Layanan 24 Jam",
-    url: "https://wa.me/6285214056596",
+    url: "https://wa.me/6282299950656",
   },
-  {
+  /*{
     name: "CS Konsultasi",
     role: "Tanya Spesifikasi",
-    url: "https://wa.me/6285214056596",
+    url: "https://wa.me/6282299950656",
   },
   {
     name: "CS Pembayaran",
     role: "Konfirmasi Transfer",
-    url: "https://wa.me/6281932122224",
-  },
+    url: "https://wa.me/6282299950656",
+  },*/
 ];
 
 function toggleWaMenu() {
