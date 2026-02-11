@@ -185,8 +185,7 @@ const businessPackagesDataPt = {
         "NPWP Badan",
         "SKT KPP",
         "NIB",
-        "Akun OSS RBA",
-        "Rekening Giro"
+        "Akun OSS RBA"
     ],
     bonus: [
       //"Rekening Perusahaan"
@@ -219,8 +218,7 @@ const businessPackagesDataCv = {
         "NPWP Badan",
         "SKT KPP",
         "NIB",
-        "Akun OSS RBA",
-        "Rekening Giro"
+        "Akun OSS RBA"
     ],
     bonus: [
       "-",
@@ -256,8 +254,7 @@ const businessPackagesDataKoperasi = {
         "NPWP Badan",
         "SKT KPP",
         "NIB",
-        "Akun OSS RBA",
-        "Rekening Giro"
+        "Akun OSS RBA"
     ],
     bonus: [
       "-",
@@ -295,8 +292,7 @@ const businessPackagesDataYayasan = {
         "NPWP Badan",
         "SKT KPP",
         "NIB",
-        "Akun OSS RBA",
-        "Rekening Giro"
+        "Akun OSS RBA"
     ],
     bonus: [
       "-",
@@ -332,8 +328,7 @@ const businessPackagesDataFirma = {
         "NPWP Badan",
         "SKT KPP",
         "NIB",
-        "Akun OSS RBA",
-        "Rekening Giro"
+        "Akun OSS RBA"
     ],
     bonus: [
       "-",
@@ -370,8 +365,7 @@ const businessPackagesDataPma = {
         "NPWP Badan",
         "SKT KPP",
         "NIB",
-        "Akun OSS RBA",
-        "Rekening Giro"
+        "Akun OSS RBA"
     ],
     bonus: [
       "-",
@@ -1019,3 +1013,4 @@ const viewFaqBusinessEntitySectionData = {
     }
   ]
 };
+
