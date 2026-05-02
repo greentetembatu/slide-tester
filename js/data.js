@@ -1034,6 +1034,6 @@ const viewFaqBusinessEntitySectionData = {
 
 const popupData = {
   link: "https://example.com",
-  image: "img/BA ADA LATAR 2.jpg",
+  image: "https://lh3.googleusercontent.com/d/1GH78OBqBd3YbCIZln-LVsoDE9n24VzhK",
   alt: "Promo"
 };
