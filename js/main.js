@@ -600,3 +600,72 @@ function scrollToTop() {
     behavior: "smooth", // Ini yang membuat gerakannya halus (smooth)
   });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function renderPopup(data) {
+  const wrapper = document.createElement("div");
+
+  wrapper.innerHTML = `
+    <div id="popupOverlay" class="popup-overlay">
+      <div class="popup-box">
+        <button class="popup-close" id="popupClose">&times;</button>
+        <a href="${data.link}" target="_blank">
+          <img src="${data.image}" alt="${data.alt}" />
+        </a>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(wrapper);
+
+  const popup = document.getElementById("popupOverlay");
+  const closeBtn = document.getElementById("popupClose");
+
+  // tampilkan popup
+  function showPopup() {
+    popup.classList.add("active");
+  }
+
+  // tutup popup
+  function hidePopup() {
+    popup.classList.remove("active");
+  }
+
+  // close button
+  closeBtn.addEventListener("click", hidePopup);
+
+  // klik luar
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) hidePopup();
+  });
+
+  // ======================
+  // AUTO SHOW
+  // ======================
+  const DELAY = 3 * 60 * 1000; // 5 menit
+  const last = localStorage.getItem("popupTime");
+  const now = Date.now();
+
+  if (!last || now - last > DELAY) {
+    setTimeout(() => {
+      showPopup();
+      localStorage.setItem("popupTime", now);
+    }, 1500);
+  }
+}
+
+// pastikan DOM siap
+window.addEventListener("DOMContentLoaded", () => {
+  renderPopup(popupData);
+});

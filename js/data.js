@@ -618,7 +618,7 @@ const ISO_DATA = {
     "Kami telah memenuhi standar dalam pengelolaan layanan dan operasional pengurusan Izin , sebagai bentuk komitmen terhadap kualitas dan profesionalisme.",
   certificates: [
     {
-      image: "img/dokumen izin dokumen lainnya.png",
+      image: "https://lh3.googleusercontent.com/d/1jwG22H4Dn2uch3iWuvmPr9sVYBuCtpCZ",
       alt: "dokumen izin 1",
     },
     /*{
@@ -626,11 +626,12 @@ const ISO_DATA = {
       alt: "dokumen izin 2",
     },*/
     {
-      image: "img/dokumen izin SK Kemenkumham.png",
+      image: "https://lh3.googleusercontent.com/d/1VVvBbA7UjkyVSS-Nhss1zPm3vlKEvZ9n",
       alt: "dokumen izin 3",
     },
   ],
 };
+
 
 /*======TESTIMONI SECTION===========*/
 
@@ -639,7 +640,7 @@ const TESTIMONIAL_DATA = {
   subtitle: "Kepercayaan klien adalah prioritas utama kami",
   testimonials: [
     {
-      clientPhoto: "img/photo-team/my-team-1 (1).jpg",
+      clientPhoto: "https://lh3.googleusercontent.com/d/1LITiXLMPF4SKieWeKud00G1QIYx5R4On",
       clientName: "Andi Pratama",
       clientRole: "Direktur • PT Maju Bersama",
       text: "Pelayanan sangat profesional dan cepat. Tim sangat responsif dan membantu dari awal hingga selesai.",
@@ -650,7 +651,7 @@ const TESTIMONIAL_DATA = {
       ],
     },
     {
-      clientPhoto: "img/photo-team/my-team-1 (2).jpg",
+      clientPhoto: "https://lh3.googleusercontent.com/d/1DAlbAP18MFGWdRiqJurFeQibd6czHMOb",
       clientName: "Siti Rahma",
       clientRole: "HR Manager • CV Sukses Mandiri",
       text: "Sangat direkomendasikan. Proses legalitas cepat dan jelas, tanpa ribet.",
@@ -658,7 +659,7 @@ const TESTIMONIAL_DATA = {
       socials: [{ icon: "fab fa-instagram", url: "#" }],
     },
     {
-      clientPhoto: "img/photo-team/my-team-1 (3).jpg",
+      clientPhoto: "https://lh3.googleusercontent.com/d/1wUYVcfB38sc2tgc__WKqb7ro6xB3-XPF",
       clientName: "Budi Santoso",
       clientRole: "Owner • PT Nusantara Jaya",
       text: "Pendampingan sangat detail dan transparan. Sangat membantu bisnis kami berkembang.",
@@ -891,7 +892,7 @@ const viewTabBusinessLicenseStepsSectionData = {
       {
         itemClass: "view-tab-step-item",
         icon: {
-          src: "img/icon/3120612.png",
+          src: "https://lh3.googleusercontent.com/d/1aECYRrKaCsBJhClHOkcFY_aNE_p4b5Ms",
           alt: "Icon",
           class: "view-tab-step-icon",
         },
@@ -904,7 +905,7 @@ const viewTabBusinessLicenseStepsSectionData = {
       {
         itemClass: "view-tab-step-item",
         icon: {
-          src: "img/icon/2620815.png",
+          src: "https://lh3.googleusercontent.com/d/1oqrxpkS1vqBmJqGgW3u9jG6lQEUXrSWP",
           alt: "Icon",
           class: "view-tab-step-icon",
         },
@@ -917,7 +918,7 @@ const viewTabBusinessLicenseStepsSectionData = {
       {
         itemClass: "view-tab-step-item",
         icon: {
-          src: "img/icon/1055666.png",
+          src: "https://lh3.googleusercontent.com/d/12cUYltg6dcmX9m8X57YX9n8b0YllccPd",
           alt: "Icon",
           class: "view-tab-step-icon",
         },
@@ -933,7 +934,7 @@ const viewTabBusinessLicenseStepsSectionData = {
   imageSide: {
     wrapperClass: "view-tab-steps-image",
     image: {
-      src: "img/meeting-3.jpg",
+      src: "https://lh3.googleusercontent.com/d/1Z9m7OSdKbCVPegsW8TtxQ5wxo9MybMAf",
       alt: "tim notaris wenika",
     },
   },
@@ -1014,3 +1015,25 @@ const viewFaqBusinessEntitySectionData = {
   ]
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const popupData = {
+  link: "https://example.com",
+  image: "img/BA ADA LATAR 2.jpg",
+  alt: "Promo"
+};
