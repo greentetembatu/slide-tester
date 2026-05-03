@@ -653,7 +653,8 @@ function renderPopup(data) {
   // ======================
   // AUTO SHOW
   // ======================
-  const DELAY = 3 * 60 * 1000; // 5 menit
+  //const DELAY = 3 * 60 * 1000; // 5 menit
+  const DELAY = 1000; // 5 menit
   const last = localStorage.getItem("popupTime");
   const now = Date.now();
 
@@ -669,3 +670,47 @@ function renderPopup(data) {
 window.addEventListener("DOMContentLoaded", () => {
   renderPopup(popupData);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function renderInstagramVideo(targetId, data) {
+  const container = document.getElementById(targetId);
+  if (!container) return;
+
+  container.innerHTML = `
+    <blockquote 
+      class="instagram-media"
+      data-instgrm-permalink="${data.url}"
+      data-instgrm-version="14"
+      style="max-width:${data.maxWidth}px; width:100%; margin:auto;">
+    </blockquote>
+  `;
+
+  // 🔥 penting: reload embed IG
+  setTimeout(() => {
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
+  }, 300);
+}

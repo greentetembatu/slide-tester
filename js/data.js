@@ -1033,7 +1033,22 @@ const viewFaqBusinessEntitySectionData = {
 
 
 const popupData = {
-  link: "https://example.com",
-  image: "https://lh3.googleusercontent.com/d/1GH78OBqBd3YbCIZln-LVsoDE9n24VzhK",
+  link: "#",
+  image: "img/BA ADA LATAR 2.jpg",
   alt: "Promo"
 };
+
+
+
+
+
+
+
+
+
+const igVideoData = {
+  url: "https://www.instagram.com/p/DW_TzzUvE43/",
+  maxWidth: 420
+};
+
+renderInstagramVideo("instagramPlayer", igVideoData);

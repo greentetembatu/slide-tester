@@ -1780,6 +1780,7 @@ background:
 
 /* Tombol untuk memutar ulang animasi */
 @media (max-width: 992px) {
+
   .six-build-st-section-title h1 {
     color: var(--hitam-pekat);
   }
@@ -1789,6 +1790,7 @@ background:
     /*max-width: 600px;*/
   }
   .six-build-st-business-packages {
+    padding: 20px 5%;
     margin-top: 0;
   }
   .six-build-st-package-card {
@@ -2935,6 +2937,9 @@ background:
   .tree-superior-services-grid{
     grid-template-columns: repeat(3, 1fr); /* 2 kolom */
   }
+  .tree-superior-services {
+    padding: 20px 5%;
+  }
 }
 @media (max-width: 768px) {
   .tree-superior-services-grid{
@@ -3683,9 +3688,7 @@ Visi & Misi Kami
 .tab-detail-item .icon {
   width: 35px; /* Memberikan lebar tetap agar teks sejajar tegak lurus */
   font-size: 1.1rem;
-  color: var(
-    --primary
-  ); /* Menggunakan warna hijau/biru dari palette fresh Anda */
+  color: var(--emas-tua); /* Menggunakan warna hijau/biru dari palette fresh Anda */
   display: flex;
   justify-content: center;
   margin-right: 10px;
@@ -3766,6 +3769,10 @@ Visi & Misi Kami
 
 /* Responsive */
 @media (max-width: 992px) {
+  .tab-contact-section {
+     padding: 20px 5%;
+
+  }
   .tab-contact-container {
     grid-template-columns: 1fr;
   }
@@ -3779,7 +3786,7 @@ Visi & Misi Kami
 /*<!--===============ARTIKEL===============-->*/
 
 .article-section {
-  padding: calc(60px + 100px) 5% 50px 5%;
+  padding: calc(50px + 80px) 5% 50px 5%;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -3787,7 +3794,7 @@ Visi & Misi Kami
 }
 
 /* Efek Bintang Latar Belakang */
-.article-section::before {
+/*.article-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -3795,7 +3802,7 @@ Visi & Misi Kami
   width: 100%;
   height: 100%;
   background-image:
-    radial-gradient(circle, #3c3535 1px, transparent 1px),
+    radial-gradient(circle, #3c3535 5px, transparent 5px),
     radial-gradient(circle, #362d2d 0.8px, transparent 0.8px);
   background-size:
     100px 100px,
@@ -3805,7 +3812,7 @@ Visi & Misi Kami
     40px 40px;
   opacity: 0.2;
   z-index: 1;
-}
+}*/
 
 .container {
   position: relative;
@@ -3966,6 +3973,13 @@ Visi & Misi Kami
   color: var(--putih-murni);
   font-size: var(--p2);
   white-space: pre-line;
+}
+
+@media (max-width: 992px) {
+  .article-section {
+     padding: 20px 5%;
+
+  }
 }
 
 /*@media (max-width: 768px) {
@@ -4761,3 +4775,27 @@ footer {
   cursor: pointer;
   font-size: 18px;
 }
+
+
+
+
+
+
+
+
+
+#instagramPlayer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.instagram-wrapper {
+  max-width: 420px;
+  margin: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+
